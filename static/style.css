@@ -188,7 +188,7 @@ section#inicio div#arraste a{
 }
 
 .section-bg{
-    background-color: #eff5ff;
+    background-color: #eff5ff !important;
 }
 
 .cv, .cv-title{
@@ -233,4 +233,26 @@ section#inicio div#arraste a{
     height: 16px;
     border: 2px solid #1f5297;
     background: white;
+}
+
+.carousel-control-prev{
+    margin-left: -10rem;
+}
+
+.carousel-control-next{
+    margin-right: -10rem;
+}
+
+.carousel-indicators{
+    margin-bottom: -35px;
+}
+
+@media (max-width: 1860px){
+    .carousel-control-prev{
+        margin-left: -10px;
+    }
+    
+    .carousel-control-next{
+        margin-right: -10px;
+    }
 }
