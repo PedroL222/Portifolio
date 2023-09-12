@@ -44,3 +44,19 @@ animeScroll();
 window.addEventListener("scroll", ()=>{
   animeScroll();
 })
+
+// Ativar carregamento de mensagem o botão de envio
+
+const btnEnviar = document.querySelector("#btn-enviar");
+const btnEnviarLoader = document.querySelector("#btn-enviar-loader");
+
+btnEnviar.addEventListener('click',()=>{
+  btnEnviarLoader.computedStyleMap.display = "block";
+  btnEnviar.computedStyleMap.display = "none";
+})
+
+// Tirar alerta depois de um tempo
+
+setTimeout(()=>{
+  document.querySelector("#alerta").computedStyleMap.display = "none";
+},5000);
