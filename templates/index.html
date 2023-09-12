@@ -435,7 +435,8 @@
           <div class="col-md-7 mt-5 mt-md-0">
             <div class="card p-5 h-100 shadow border-0" data-anime="right">
 
-              <form class="row g-3" action="/send" method="POST">
+              <form class="row g-3" action="https://api.staticforms.xyz/submit" method="POST">
+                <input type="hidden" name="accessKey" value="f74ac13c-9f9b-4b18-9e9d-1787076cd573">
                 <div class="col-md-6">
                   <label for="nome" class="form-label">Nome:</label>
                   <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome" required>
@@ -448,9 +449,11 @@
 
                 <div class="col-12">
                   <label for="mensagem" class="form-label">Mensagem:</label>
-                  <textarea type="text" class="form-control" id="mensagem" name="mensagem"
+                  <textarea type="text" class="form-control" id="mensagem" name="message"
                     placeholder="Digite sua mensagem" rows="10" required> </textarea>
                 </div>
+
+                <input type="hidden" name="redirectTo" value="http://127.0.0.1:5000/">
 
                 <div id="btn-enviar" class="col-12 d-flex justify-content-center mt-4">
                   <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
