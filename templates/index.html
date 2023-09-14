@@ -21,16 +21,16 @@
       <img src="../static/img/photo_4936287488062893444_y (1).jpg" alt="Foto Pedro Lucas">
       <h1>Pedro Lucas</h1>
       <div class="social-links mt-4 text-center">
-        <a target="_blank" href="https://www.linkedin.com/in/pedro-lucas-freitas-sousa-23b78b287">
+        <a id="link_linkedin" target="_blank" href="https://www.linkedin.com/in/pedro-lucas-freitas-sousa-23b78b287">
           <i class="bi bi-linkedin"></i>
         </a>
-        <a target="_blank" href="https://github.com/PedroL222">
+        <a id="link_github" target="_blank" href="https://github.com/PedroL222">
           <i class="bi bi-github"></i>
         </a>
-        <a target="_blank" href="https://www.instagram.com/pedrolucasf.s/">
+        <a id="link_instagram" target="_blank" href="https://www.instagram.com/pedrolucasf.s/">
           <i class="bi bi-instagram"></i>
         </a>
-        <a target="_blank" href="https://www.facebook.com/pedrolucas.freitassousa/">
+        <a id="link_facebook" target="_blank" href="https://www.facebook.com/pedrolucas.freitassousa/">
           <i class="bi bi-facebook"></i>
         </a>
       </div>
@@ -39,7 +39,7 @@
     <nav id="navbar" class="nav-menu">
       <ul class="nav flex-column">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#inicio">
+          <a class="nav-link " aria-current="page" href="#inicio">
             <i class="bi bi-house"></i>
             Inicio
           </a>
@@ -275,7 +275,12 @@
 
       <div class="container pb-5 pt-5" data-anime="left">
         <h2 class="pb-4">Portifólio</h2>
-        <div id="carouselPortifolio" class="carousel carousel-dark slide">
+        <div class="row justify-content-center mb-md-3">
+          <div class="col ms-md-3 me-md-3 mb-3 mb-md-0 text-center port-filtro filtro-selecionado">Web</div>
+          <div class="col ms-md-3 me-md-3 mb-3 mb-md-0 text-center port-filtro">Mobile</div>
+          <div class="col ms-md-3 me-md-3 mb-3 mb-md-0 text-center port-filtro">Outros</div>
+        </div>
+        <div id="carouselPortifolio" class="carousel carousel-dark slide displayNone displayBlock portWeb">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselPortifolio" data-bs-slide-to="0" class="active"
               aria-current="true" aria-label="Slide 1"></button>
@@ -290,7 +295,7 @@
                   <div class="card">
                     <img src="../static/img/verclima.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
+                      <h5 class="card-title">Web</h5>
                       <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
                         additional content. This content is a little bit longer.</p>
                       <div class="d-flex justify-content-center">
@@ -386,11 +391,257 @@
             </div>
 
           </div>
+          
+         
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselPortifolio" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
           <button class="carousel-control-next" type="button" data-bs-target="#carouselPortifolio" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div id="carouselPortifolio2" class="carousel carousel-dark slide displayNone portMobile">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselPortifolio2" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselPortifolio2" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+
+          </div>
+          <div class="carousel-inner displayNone displayBlock" id="portWeb">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card">
+                    <img src="../static/img/verclima.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Mobile</h5>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                      <div class="d-flex justify-content-center">
+                        <a href="" target="_blank" class="btn btn-outline-primary me-3"><i
+                            class="bi bi-link-45deg"></i></a>
+                        <a href="" target="_blank" class="btn btn-outline-dark"><i class="bi bi-github"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="../static/img/todolist (1).png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                      <div class="d-flex justify-content-center">
+                        <a href="" target="_blank" class="btn btn-outline-primary me-3"><i
+                            class="bi bi-link-45deg"></i></a>
+                        <a href="" target="_blank" class="btn btn-outline-dark"><i class="bi bi-github"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="../static/img/seguroSite.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                        additional content.This content is a little bit longer</p>
+                      <div class="d-flex justify-content-center">
+                        <a href="https://pedrol222.github.io/Seguro_de_Veiculos/view/" target="_blank" class="btn btn-outline-primary me-3"><i
+                            class="bi bi-link-45deg"></i></a>
+                        <a href="" target="_blank" class="btn btn-outline-dark"><i class="bi bi-github"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card">
+                    <img src="../static/img/verclima.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                      <div class="d-flex justify-content-center">
+                        <a href="" target="_blank" class="btn btn-outline-primary me-3"><i
+                            class="bi bi-link-45deg"></i></a>
+                        <a href="" target="_blank" class="btn btn-outline-dark"><i class="bi bi-github"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="../static/img/todolist (1).png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                      <div class="d-flex justify-content-center">
+                        <a href="" target="_blank" class="btn btn-outline-primary me-3"><i
+                            class="bi bi-link-45deg"></i></a>
+                        <a href="" target="_blank" class="btn btn-outline-dark"><i class="bi bi-github"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="../static/img/seguroSite.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                        additional content.This content is a little bit longer</p>
+                      <div class="d-flex justify-content-center">
+                        <a href="" target="_blank" class="btn btn-outline-primary me-3"><i
+                            class="bi bi-link-45deg"></i></a>
+                        <a href="" target="_blank" class="btn btn-outline-dark"><i class="bi bi-github"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+          
+         
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselPortifolio2" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselPortifolio2" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div id="carouselPortifolio3" class="carousel carousel-dark slide displayNone portOutros" >
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselPortifolio3" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselPortifolio3" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+
+          </div>
+          <div class="carousel-inner displayNone displayBlock" id="portWeb">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card">
+                    <img src="../static/img/verclima.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Outros</h5>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                      <div class="d-flex justify-content-center">
+                        <a href="" target="_blank" class="btn btn-outline-primary me-3"><i
+                            class="bi bi-link-45deg"></i></a>
+                        <a href="" target="_blank" class="btn btn-outline-dark"><i class="bi bi-github"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="../static/img/todolist (1).png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                      <div class="d-flex justify-content-center">
+                        <a href="" target="_blank" class="btn btn-outline-primary me-3"><i
+                            class="bi bi-link-45deg"></i></a>
+                        <a href="" target="_blank" class="btn btn-outline-dark"><i class="bi bi-github"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="../static/img/seguroSite.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                        additional content.This content is a little bit longer</p>
+                      <div class="d-flex justify-content-center">
+                        <a href="https://pedrol222.github.io/Seguro_de_Veiculos/view/" target="_blank" class="btn btn-outline-primary me-3"><i
+                            class="bi bi-link-45deg"></i></a>
+                        <a href="" target="_blank" class="btn btn-outline-dark"><i class="bi bi-github"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card">
+                    <img src="../static/img/verclima.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                      <div class="d-flex justify-content-center">
+                        <a href="" target="_blank" class="btn btn-outline-primary me-3"><i
+                            class="bi bi-link-45deg"></i></a>
+                        <a href="" target="_blank" class="btn btn-outline-dark"><i class="bi bi-github"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="../static/img/todolist (1).png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                      <div class="d-flex justify-content-center">
+                        <a href="" target="_blank" class="btn btn-outline-primary me-3"><i
+                            class="bi bi-link-45deg"></i></a>
+                        <a href="" target="_blank" class="btn btn-outline-dark"><i class="bi bi-github"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="../static/img/seguroSite.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                        additional content.This content is a little bit longer</p>
+                      <div class="d-flex justify-content-center">
+                        <a href="" target="_blank" class="btn btn-outline-primary me-3"><i
+                            class="bi bi-link-45deg"></i></a>
+                        <a href="" target="_blank" class="btn btn-outline-dark"><i class="bi bi-github"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+          
+         
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselPortifolio3" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselPortifolio3" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>

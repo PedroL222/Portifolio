@@ -99,7 +99,23 @@ i.menu-mobile{
 }
 
 #header .profile .social-links a:hover{
-    background: #149ddd;
+    
+}
+
+#header .profile .social-links #link_linkedin:hover{
+    background: #0e76a8;
+}
+
+#header .profile .social-links #link_github:hover{
+    background: #993399d0;
+}
+
+#header .profile .social-links #link_instagram:hover{
+    background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+
+#header .profile .social-links #link_facebook:hover{
+    background:  #3b5998;
 }
 
 .nav-menu{
@@ -301,7 +317,7 @@ section#inicio div#arraste a{
 }
 
 #footer{
-    padding: 16px;
+    padding: 6px;
     color: white;
     font-size: 14px;
     position: fixed;
@@ -311,6 +327,31 @@ section#inicio div#arraste a{
     z-index: 9999;
     background-color: #021124;
     transition: .3s;
+}
+
+.port-filtro{
+    background-color:#eff5ff;
+    border-bottom: #050d18 2px solid;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+
+.filtro-selecionado{
+    color: white;
+    background-color: #050d18;
+}
+
+.displayNone{
+    display: none;
+}
+
+.displayBlock{
+    display: block !important;
+}
+
+.port-filtro:hover{
+    color: white;
+    background-color: #050d18;
 }
 
 @media (max-width: 1012px) {

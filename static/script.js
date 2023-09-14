@@ -60,3 +60,45 @@ btnEnviar.addEventListener('click',()=>{
 setTimeout(()=>{
   document.querySelector("#alerta").computedStyleMap.display = "none";
 },5000);
+
+// Filtrar carrosel do Portifólio
+
+const filtros = document.querySelectorAll(".port-filtro");
+
+const portWeb = document.querySelector(".portWeb");
+const portMobile = document.querySelector(".portMobile");
+const portOutros = document.querySelector(".portOutros");
+
+filtros.forEach((fil)=>{
+  fil.addEventListener("click",()=>{
+    if(fil.classList.contains('filtro-selecionado')){
+
+    }else{
+      filtros.forEach((fil2)=>{
+        fil2.classList.remove("filtro-selecionado");
+      });
+      fil.classList.add("filtro-selecionado");
+    }
+
+    if(fil.innerHTML == "Web"){
+      if(portWeb.classList.contains("displayBlock") == false){
+        portOutros.classList.remove("displayBlock");
+        portMobile.classList.remove("displayBlock");
+        portWeb.classList.add("displayBlock");
+      }
+    }else if(fil.innerHTML == "Mobile"){
+      if(portMobile.classList.contains("displayBlock") == false){
+        portOutros.classList.remove("displayBlock");
+        portMobile.classList.add("displayBlock");
+        portWeb.classList.remove("displayBlock");
+      }
+    }else if (fil.innerHTML == "Outros"){
+      if(portOutros.classList.contains("displayBlock") == false){
+        portOutros.classList.add("displayBlock");
+        portMobile.classList.remove("displayBlock");
+        portWeb.classList.remove("displayBlock");
+      }
+    }
+
+  })
+})
