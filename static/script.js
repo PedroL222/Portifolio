@@ -55,12 +55,6 @@ btnEnviar.addEventListener('click',()=>{
   btnEnviar.computedStyleMap.display = "none";
 })
 
-// Tirar alerta depois de um tempo
-
-setTimeout(()=>{
-  document.querySelector("#alerta").computedStyleMap.display = "none";
-},5000);
-
 // Filtrar carrosel do Portifólio
 
 const filtros = document.querySelectorAll(".port-filtro");
@@ -100,5 +94,29 @@ filtros.forEach((fil)=>{
       }
     }
 
+  })
+})
+
+// Dark mode
+
+const darkMode = document.querySelector('#dark-mode-container');
+
+darkMode.addEventListener("click", ()=>{
+
+  
+
+  if (darkMode.firstChild.classList.contains("bi-brightness-high")){
+    darkMode.firstChild.classList.remove("bi");
+    darkMode.firstChild.classList.replace("bi-brightness-high","bi-moon");
+  }else{
+    darkMode.firstChild.classList.replace("bi-moon","bi-brightness-high");
+    darkMode.firstChild.classList.remove("bi");
+  }
+
+  body.classList.toggle("bg-dark");
+  const secoes = document.querySelectorAll(".section-bg");
+  secoes.forEach((sc)=>{
+    sc.classList.toggle("bg-dark");
+    sc.classList.toggle("section-bg-dark");
   })
 })
