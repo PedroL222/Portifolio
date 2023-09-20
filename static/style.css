@@ -45,9 +45,64 @@ i.menu-mobile{
 }
 
 .section-bg-dark{
-    background-color: #4b0a5f !important;
+    background-color: #052146d5 !important;
     color: white !important;
 }
+
+.menu-bg-dark{
+    background: #0a418a !important;
+}
+
+.menu-bg-dark .profile h1{
+    color: white!important;
+}
+
+
+.menu-bg-dark .nav-menu a,.menu-bg-dark .nav-menu a:focus{
+    display: flex;
+    align-items: center;
+    color: #b3adadcb;
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+.menu-bg-dark .nav-menu a i,.menu-bg-dark .nav-menu a:focus i{
+    font-size: 24px;
+    padding-right: 0.8rem;
+    color: #ffffff;
+}
+
+.menu-bg-dark .nav-menu a:hover,
+.menu-bg-dark .nav-menu .active,
+.menu-bg-dark .nav-menu .active:focus,
+.menu-bg-dark .nav-menu li:hover > a{
+    text-decoration: none;
+    color: white;
+}
+
+.menu-bg-dark .nav-menu a:hover i,
+.menu-bg-dark .nav-menu .active i,
+.menu-bg-dark .nav-menu .active:focus i,
+.menu-bg-dark .nav-menu li:hover > a i{
+    color: #149ddd;
+}
+
+.infos-iniciais-dark > div > ul > li{
+    background-color: #021124;
+    color: white;
+    border: none;
+    
+}
+
+.curriculo-dark, .curriculo-dark > h3, .curriculo-dark > .cv-item > h4{
+    color: white !important;
+}
+
+.curriculo-dark > div > div > div .cv-item > h5{
+    background: #0a418a !important;
+}
+
+
 
 .menu-nav-active{
     overflow: hidden;
@@ -63,6 +118,9 @@ i.menu-mobile{
     }
     i.menu-mobile{
         display: flex;
+    }
+    #dark-mode{
+        right: 4rem;
     }
     section#inicio h2{
         font-size: 3.5rem;
@@ -232,7 +290,7 @@ section#inicio div#arraste a{
     background-color: #eff5ff;
 }
 
-.cv, .cv-title{
+#curriculo > .cv, #curriculo > .cv-title{
     font-weight: 700;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -246,7 +304,7 @@ section#inicio div#arraste a{
     position: relative;
 }
 
-.cv, .cv-item h4{
+#curriculo > .cv, #curriculo > .cv-item h4{
     line-height: 18px;
     font-weight: 600;
     text-transform: uppercase;
@@ -256,7 +314,7 @@ section#inicio div#arraste a{
     line-height: 2rem;
 }
 
-.cv, .cv-item h5{
+#curriculo > div > div > div .cv, #curriculo > div > div > div > .cv-item h5{
     background: #e4edf9;
     padding: 5px 15px;
     display: inline-block;

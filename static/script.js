@@ -63,6 +63,7 @@ const portWeb = document.querySelector(".portWeb");
 const portMobile = document.querySelector(".portMobile");
 const portOutros = document.querySelector(".portOutros");
 
+
 filtros.forEach((fil)=>{
   fil.addEventListener("click",()=>{
     if(fil.classList.contains('filtro-selecionado')){
@@ -100,6 +101,10 @@ filtros.forEach((fil)=>{
 // Dark mode
 
 const darkMode = document.querySelector('#dark-mode-container');
+const header = document.querySelector("#header");
+const footer = document.querySelector("#footer");
+const infosIniciais = document.querySelector("#infos-iniciais");
+const curriculo = document.querySelector("#curriculo");
 
 darkMode.addEventListener("click", ()=>{
 
@@ -118,5 +123,9 @@ darkMode.addEventListener("click", ()=>{
   secoes.forEach((sc)=>{
     sc.classList.toggle("bg-dark");
     sc.classList.toggle("section-bg-dark");
-  })
+  });
+  header.classList.toggle("menu-bg-dark");
+  footer.classList.toggle("menu-bg-dark");
+  infosIniciais.classList.toggle("infos-iniciais-dark");
+  curriculo.classList.toggle("curriculo-dark");
 })
