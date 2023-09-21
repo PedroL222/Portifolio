@@ -24,6 +24,8 @@ i.menu-mobile{
     align-items: center;
 }
 
+/* Modo Dark */
+
 #dark-mode{
     position: fixed;
     right: 1rem;
@@ -56,7 +58,6 @@ i.menu-mobile{
 .menu-bg-dark .profile h1{
     color: white!important;
 }
-
 
 .menu-bg-dark .nav-menu a,.menu-bg-dark .nav-menu a:focus{
     display: flex;
@@ -102,7 +103,11 @@ i.menu-mobile{
     background: #0a418a !important;
 }
 
+.port-filtro-dark{
 
+}
+
+/* Modo Dark */
 
 .menu-nav-active{
     overflow: hidden;
@@ -413,15 +418,16 @@ section#inicio div#arraste a{
 }
 
 .port-filtro{
-    background-color:#eff5ff;
-    border-bottom: #050d18 2px solid;
+    color: white;
+    background-color:#245fb3;
+    border-bottom: #245fb3 2px solid;
     cursor: pointer;
     transition: ease-in-out 0.3s;
 }
 
 .filtro-selecionado{
     color: white;
-    background-color: #050d18;
+    background-color: #245fb3;
 }
 
 .displayNone{
