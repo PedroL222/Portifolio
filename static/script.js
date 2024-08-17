@@ -1,4 +1,4 @@
-    // Abrir e fechar menu lateral em celulares
+// Abrir e fechar menu lateral em celulares
 
 const menuMobile = document.querySelector('.menu-mobile');
 const body = document.querySelector('body');
