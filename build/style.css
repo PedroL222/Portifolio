@@ -152,7 +152,8 @@ i.menu-mobile{
 #header .profile img{
     margin: 15px auto;
     display: block;
-    width: 120px;
+    width: 140px;
+    height: 200px;
     border: 8px solid  #2c2f3f;
     border-radius: 50%;
 }
